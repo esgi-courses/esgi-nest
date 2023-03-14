@@ -10,3 +10,21 @@ services:
       - /usr/src/app/node_modules
     ports:
       - 3000:3000
+
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: database
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+  
+  adminer:
+    image: adminer
+    environment:
+        ADMINER_DESIGN: pepa-linha-dark
+    ports:
+      - "8080:8080"
