@@ -1,0 +1,35 @@
+# compiled output
+/project/dist
+/project/node_modules
+
+# Logs
+/project/logs
+/project/*.log
+/project/vnpm-debug.log*
+/project/pnpm-debug.log*
+/project/yarn-debug.log*
+/project/yarn-error.log*
+/project/lerna-debug.log*
+
+# OS
+/project/.DS_Store
+
+# Tests
+/project/coverage
+/project/.nyc_output
+
+# IDEs and editors
+/project/.idea
+/project/.project
+/project/.classpath
+/project/.c9/
+/project/*.launch
+/project/.settings/
+/project/*.sublime-workspace
+
+# IDE - VSCode
+/project/.vscode/*
+/project/!.vscode/settings.json
+/project/!.vscode/tasks.json
+/project/!.vscode/launch.json
+/project/!.vscode/extensions.json
