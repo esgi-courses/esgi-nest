@@ -6,8 +6,8 @@ services:
     build:
       context: ./project
     volumes:
-      - ./project:/usr/src/app
-      - /usr/src/app/node_modules
+      - ./project:/app
+      - /app/node_modules
     ports:
       - 3000:3000
 
